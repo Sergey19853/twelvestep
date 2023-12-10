@@ -2,16 +2,27 @@ package edu.training.js.task_triangle;
 
 public class Point {
 
-	public double x, y;
+	private double x;
+	private double y;
 	
+	public double getX() {
+		return x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
 	public Point(double x_, double y_) {
 		x = x_;
 		y = y_;
 	}
 	
-	public static double coordinates(Point a, Point b) {
-		double dx = a.x - b.x;
-		double dy = a.y - b.y;
+	public double distance(Point b) {
+		
+		double dx = this.x - b.getX();
+		double dy = this.y - b.getY();
+
 		return Math.sqrt(dx * dx + dy * dy);
 	}
 	

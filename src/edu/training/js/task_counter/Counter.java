@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Counter {
 	
-    int count;
-    int max;
-    int min;
+    private int count;
+    private int max;
+    private int min;
     
     public Counter(){
     	
@@ -40,19 +40,11 @@ public class Counter {
     	if (count < min) {
     		count = max;
     	}
-    		  
-        	
+    		     	
     }
 
 	public int getCount() {
 		return count;
 	}
 	
-	public static void print (String message) {
-		
-		System.out.println("--------------" + message + "--------------");
-		//System.out.println(count);
-		
-	}
-
 }

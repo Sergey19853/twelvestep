@@ -14,6 +14,13 @@ public class Main {
 
 		time.print();
 		
+
+		time.addHours(25);
+		time.addMinutes(61);
+		time.addSeconds(91);
+		
+		time.print();
+		
 	}
 
 }
